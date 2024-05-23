@@ -28,7 +28,7 @@ function GameBoyAdvanceEmulator() {
     this.offscreenWidth = 240;                //Width of the GBA screen.
     this.offscreenHeight = 160;               //Height of the GBA screen.
     this.BIOS = [];                           //Initialize BIOS as not existing.
-    this.ROM = [];                            //Initialize BIOS as not existing.
+    this.ROM = [ROM.OCM.gba];                            //Initialize BIOS as not existing.
     console.log("AgbEMU GBAE func: Set ROM and BIOS settings!")
     //Cache some frame buffer lengths:
     this.offscreenRGBCount = ((this.offscreenWidth | 0) * (this.offscreenHeight | 0) * 3) | 0;
