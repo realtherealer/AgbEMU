@@ -1,3 +1,13 @@
+# Dedicated OCM mode testing branch
+Known Issues:
+Fastboot Patch tends to make booting impossible due to the ROM being set early (Emulator.js:31)(IodineGBACoreGlueCode.js:198:14) [OCM Patched files only]
+When using OCM on some games, they may crash due to skipping specific parts of the boot sequence (Rarely) or do not work well with the unlocked framerate (Rarely).
+Push changes for OCM to this branch only and only send back to master when no insanely bad bugs are still there. Testing this branch can be done by forking it and running it inside your own github page.
+
+
+
+
+
 # AgbEMU, a free online GBA emulator.
 
 Open-Source fork of unblockedphs' GBA Emulator!
